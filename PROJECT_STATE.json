@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "project": "Photonics Optimization Platform",
+  "version": "0.1.0",
+  "phase": "synthetic_prototype",
+  "python_minimum": "3.10",
+  "algorithms": [
+    "GridSearch",
+    "RandomSearch"
+  ],
+  "objective_kind": "synthetic_analytic_toy",
+  "scientifically_validated": false,
+  "external_api_keys_required": false,
+  "local_tests": {
+    "status": "passed",
+    "passed": 24,
+    "failed": 0,
+    "python": "3.12.14",
+    "command": "python -m pytest --junitxml=work/pytest.xml",
+    "verified_date": "2026-10-11"
+  },
+  "remote_ci": {
+    "status": "not_yet_verified"
+  },
+  "weekly_report": {
+    "cron_utc": "0 1 * * 1",
+    "activation": "after_merge_to_default_branch"
+  },
+  "next_task": "Add explicit evaluation and memory guards for Cartesian grids"
+}

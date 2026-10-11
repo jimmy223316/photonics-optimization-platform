@@ -1,0 +1,1967 @@
+{
+  "data_kind": "synthetic_analytic_toy",
+  "scientifically_validated": false,
+  "objective": "exp(-0.5*((offset_um/0.8)^2+(angle_deg/4)^2))",
+  "search_space": [
+    {
+      "name": "offset_um",
+      "lower": -2.0,
+      "upper": 2.0
+    },
+    {
+      "name": "angle_deg",
+      "lower": -10.0,
+      "upper": 10.0
+    }
+  ],
+  "results": [
+    {
+      "algorithm": "GridSearch",
+      "history": [
+        {
+          "parameters": {
+            "offset_um": -2.0,
+            "angle_deg": -10.0
+          },
+          "score": 0.0019304541362277093,
+          "best_so_far": 0.0019304541362277093
+        },
+        {
+          "parameters": {
+            "offset_um": -2.0,
+            "angle_deg": -8.0
+          },
+          "score": 0.005946217356472094,
+          "best_so_far": 0.005946217356472094
+        },
+        {
+          "parameters": {
+            "offset_um": -2.0,
+            "angle_deg": -6.0
+          },
+          "score": 0.014264233908999256,
+          "best_so_far": 0.014264233908999256
+        },
+        {
+          "parameters": {
+            "offset_um": -2.0,
+            "angle_deg": -4.0
+          },
+          "score": 0.026649097336355485,
+          "best_so_far": 0.026649097336355485
+        },
+        {
+          "parameters": {
+            "offset_um": -2.0,
+            "angle_deg": -2.0
+          },
+          "score": 0.03877420783172201,
+          "best_so_far": 0.03877420783172201
+        },
+        {
+          "parameters": {
+            "offset_um": -2.0,
+            "angle_deg": 0.0
+          },
+          "score": 0.04393693362340742,
+          "best_so_far": 0.04393693362340742
+        },
+        {
+          "parameters": {
+            "offset_um": -2.0,
+            "angle_deg": 2.0
+          },
+          "score": 0.03877420783172201,
+          "best_so_far": 0.04393693362340742
+        },
+        {
+          "parameters": {
+            "offset_um": -2.0,
+            "angle_deg": 4.0
+          },
+          "score": 0.026649097336355485,
+          "best_so_far": 0.04393693362340742
+        },
+        {
+          "parameters": {
+            "offset_um": -2.0,
+            "angle_deg": 6.0
+          },
+          "score": 0.014264233908999256,
+          "best_so_far": 0.04393693362340742
+        },
+        {
+          "parameters": {
+            "offset_um": -2.0,
+            "angle_deg": 8.0
+          },
+          "score": 0.005946217356472094,
+          "best_so_far": 0.04393693362340742
+        },
+        {
+          "parameters": {
+            "offset_um": -2.0,
+            "angle_deg": 10.0
+          },
+          "score": 0.0019304541362277093,
+          "best_so_far": 0.04393693362340742
+        },
+        {
+          "parameters": {
+            "offset_um": -1.6,
+            "angle_deg": -10.0
+          },
+          "score": 0.005946217356472094,
+          "best_so_far": 0.04393693362340742
+        },
+        {
+          "parameters": {
+            "offset_um": -1.6,
+            "angle_deg": -8.0
+          },
+          "score": 0.01831563888873418,
+          "best_so_far": 0.04393693362340742
+        },
+        {
+          "parameters": {
+            "offset_um": -1.6,
+            "angle_deg": -6.0
+          },
+          "score": 0.04393693362340742,
+          "best_so_far": 0.04393693362340742
+        },
+        {
+          "parameters": {
+            "offset_um": -1.6,
+            "angle_deg": -4.0
+          },
+          "score": 0.0820849986238988,
+          "best_so_far": 0.0820849986238988
+        },
+        {
+          "parameters": {
+            "offset_um": -1.6,
+            "angle_deg": -2.0
+          },
+          "score": 0.11943296826671962,
+          "best_so_far": 0.11943296826671962
+        },
+        {
+          "parameters": {
+            "offset_um": -1.6,
+            "angle_deg": 0.0
+          },
+          "score": 0.1353352832366127,
+          "best_so_far": 0.1353352832366127
+        },
+        {
+          "parameters": {
+            "offset_um": -1.6,
+            "angle_deg": 2.0
+          },
+          "score": 0.11943296826671962,
+          "best_so_far": 0.1353352832366127
+        },
+        {
+          "parameters": {
+            "offset_um": -1.6,
+            "angle_deg": 4.0
+          },
+          "score": 0.0820849986238988,
+          "best_so_far": 0.1353352832366127
+        },
+        {
+          "parameters": {
+            "offset_um": -1.6,
+            "angle_deg": 6.0
+          },
+          "score": 0.04393693362340742,
+          "best_so_far": 0.1353352832366127
+        },
+        {
+          "parameters": {
+            "offset_um": -1.6,
+            "angle_deg": 8.0
+          },
+          "score": 0.01831563888873418,
+          "best_so_far": 0.1353352832366127
+        },
+        {
+          "parameters": {
+            "offset_um": -1.6,
+            "angle_deg": 10.0
+          },
+          "score": 0.005946217356472094,
+          "best_so_far": 0.1353352832366127
+        },
+        {
+          "parameters": {
+            "offset_um": -1.2,
+            "angle_deg": -10.0
+          },
+          "score": 0.014264233908999256,
+          "best_so_far": 0.1353352832366127
+        },
+        {
+          "parameters": {
+            "offset_um": -1.2,
+            "angle_deg": -8.0
+          },
+          "score": 0.04393693362340742,
+          "best_so_far": 0.1353352832366127
+        },
+        {
+          "parameters": {
+            "offset_um": -1.2,
+            "angle_deg": -6.0
+          },
+          "score": 0.10539922456186433,
+          "best_so_far": 0.1353352832366127
+        },
+        {
+          "parameters": {
+            "offset_um": -1.2,
+            "angle_deg": -4.0
+          },
+          "score": 0.1969116752041941,
+          "best_so_far": 0.1969116752041941
+        },
+        {
+          "parameters": {
+            "offset_um": -1.2,
+            "angle_deg": -2.0
+          },
+          "score": 0.28650479686019015,
+          "best_so_far": 0.28650479686019015
+        },
+        {
+          "parameters": {
+            "offset_um": -1.2,
+            "angle_deg": 0.0
+          },
+          "score": 0.3246524673583498,
+          "best_so_far": 0.3246524673583498
+        },
+        {
+          "parameters": {
+            "offset_um": -1.2,
+            "angle_deg": 2.0
+          },
+          "score": 0.28650479686019015,
+          "best_so_far": 0.3246524673583498
+        },
+        {
+          "parameters": {
+            "offset_um": -1.2,
+            "angle_deg": 4.0
+          },
+          "score": 0.1969116752041941,
+          "best_so_far": 0.3246524673583498
+        },
+        {
+          "parameters": {
+            "offset_um": -1.2,
+            "angle_deg": 6.0
+          },
+          "score": 0.10539922456186433,
+          "best_so_far": 0.3246524673583498
+        },
+        {
+          "parameters": {
+            "offset_um": -1.2,
+            "angle_deg": 8.0
+          },
+          "score": 0.04393693362340742,
+          "best_so_far": 0.3246524673583498
+        },
+        {
+          "parameters": {
+            "offset_um": -1.2,
+            "angle_deg": 10.0
+          },
+          "score": 0.014264233908999256,
+          "best_so_far": 0.3246524673583498
+        },
+        {
+          "parameters": {
+            "offset_um": -0.7999999999999998,
+            "angle_deg": -10.0
+          },
+          "score": 0.026649097336355485,
+          "best_so_far": 0.3246524673583498
+        },
+        {
+          "parameters": {
+            "offset_um": -0.7999999999999998,
+            "angle_deg": -8.0
+          },
+          "score": 0.0820849986238988,
+          "best_so_far": 0.3246524673583498
+        },
+        {
+          "parameters": {
+            "offset_um": -0.7999999999999998,
+            "angle_deg": -6.0
+          },
+          "score": 0.1969116752041941,
+          "best_so_far": 0.3246524673583498
+        },
+        {
+          "parameters": {
+            "offset_um": -0.7999999999999998,
+            "angle_deg": -4.0
+          },
+          "score": 0.3678794411714424,
+          "best_so_far": 0.3678794411714424
+        },
+        {
+          "parameters": {
+            "offset_um": -0.7999999999999998,
+            "angle_deg": -2.0
+          },
+          "score": 0.5352614285189904,
+          "best_so_far": 0.5352614285189904
+        },
+        {
+          "parameters": {
+            "offset_um": -0.7999999999999998,
+            "angle_deg": 0.0
+          },
+          "score": 0.6065306597126335,
+          "best_so_far": 0.6065306597126335
+        },
+        {
+          "parameters": {
+            "offset_um": -0.7999999999999998,
+            "angle_deg": 2.0
+          },
+          "score": 0.5352614285189904,
+          "best_so_far": 0.6065306597126335
+        },
+        {
+          "parameters": {
+            "offset_um": -0.7999999999999998,
+            "angle_deg": 4.0
+          },
+          "score": 0.3678794411714424,
+          "best_so_far": 0.6065306597126335
+        },
+        {
+          "parameters": {
+            "offset_um": -0.7999999999999998,
+            "angle_deg": 6.0
+          },
+          "score": 0.1969116752041941,
+          "best_so_far": 0.6065306597126335
+        },
+        {
+          "parameters": {
+            "offset_um": -0.7999999999999998,
+            "angle_deg": 8.0
+          },
+          "score": 0.0820849986238988,
+          "best_so_far": 0.6065306597126335
+        },
+        {
+          "parameters": {
+            "offset_um": -0.7999999999999998,
+            "angle_deg": 10.0
+          },
+          "score": 0.026649097336355485,
+          "best_so_far": 0.6065306597126335
+        },
+        {
+          "parameters": {
+            "offset_um": -0.3999999999999999,
+            "angle_deg": -10.0
+          },
+          "score": 0.03877420783172201,
+          "best_so_far": 0.6065306597126335
+        },
+        {
+          "parameters": {
+            "offset_um": -0.3999999999999999,
+            "angle_deg": -8.0
+          },
+          "score": 0.11943296826671962,
+          "best_so_far": 0.6065306597126335
+        },
+        {
+          "parameters": {
+            "offset_um": -0.3999999999999999,
+            "angle_deg": -6.0
+          },
+          "score": 0.2865047968601901,
+          "best_so_far": 0.6065306597126335
+        },
+        {
+          "parameters": {
+            "offset_um": -0.3999999999999999,
+            "angle_deg": -4.0
+          },
+          "score": 0.5352614285189903,
+          "best_so_far": 0.6065306597126335
+        },
+        {
+          "parameters": {
+            "offset_um": -0.3999999999999999,
+            "angle_deg": -2.0
+          },
+          "score": 0.7788007830714049,
+          "best_so_far": 0.7788007830714049
+        },
+        {
+          "parameters": {
+            "offset_um": -0.3999999999999999,
+            "angle_deg": 0.0
+          },
+          "score": 0.8824969025845955,
+          "best_so_far": 0.8824969025845955
+        },
+        {
+          "parameters": {
+            "offset_um": -0.3999999999999999,
+            "angle_deg": 2.0
+          },
+          "score": 0.7788007830714049,
+          "best_so_far": 0.8824969025845955
+        },
+        {
+          "parameters": {
+            "offset_um": -0.3999999999999999,
+            "angle_deg": 4.0
+          },
+          "score": 0.5352614285189903,
+          "best_so_far": 0.8824969025845955
+        },
+        {
+          "parameters": {
+            "offset_um": -0.3999999999999999,
+            "angle_deg": 6.0
+          },
+          "score": 0.2865047968601901,
+          "best_so_far": 0.8824969025845955
+        },
+        {
+          "parameters": {
+            "offset_um": -0.3999999999999999,
+            "angle_deg": 8.0
+          },
+          "score": 0.11943296826671962,
+          "best_so_far": 0.8824969025845955
+        },
+        {
+          "parameters": {
+            "offset_um": -0.3999999999999999,
+            "angle_deg": 10.0
+          },
+          "score": 0.03877420783172201,
+          "best_so_far": 0.8824969025845955
+        },
+        {
+          "parameters": {
+            "offset_um": 0.0,
+            "angle_deg": -10.0
+          },
+          "score": 0.04393693362340742,
+          "best_so_far": 0.8824969025845955
+        },
+        {
+          "parameters": {
+            "offset_um": 0.0,
+            "angle_deg": -8.0
+          },
+          "score": 0.1353352832366127,
+          "best_so_far": 0.8824969025845955
+        },
+        {
+          "parameters": {
+            "offset_um": 0.0,
+            "angle_deg": -6.0
+          },
+          "score": 0.32465246735834974,
+          "best_so_far": 0.8824969025845955
+        },
+        {
+          "parameters": {
+            "offset_um": 0.0,
+            "angle_deg": -4.0
+          },
+          "score": 0.6065306597126334,
+          "best_so_far": 0.8824969025845955
+        },
+        {
+          "parameters": {
+            "offset_um": 0.0,
+            "angle_deg": -2.0
+          },
+          "score": 0.8824969025845955,
+          "best_so_far": 0.8824969025845955
+        },
+        {
+          "parameters": {
+            "offset_um": 0.0,
+            "angle_deg": 0.0
+          },
+          "score": 1.0,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.0,
+            "angle_deg": 2.0
+          },
+          "score": 0.8824969025845955,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.0,
+            "angle_deg": 4.0
+          },
+          "score": 0.6065306597126334,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.0,
+            "angle_deg": 6.0
+          },
+          "score": 0.32465246735834974,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.0,
+            "angle_deg": 8.0
+          },
+          "score": 0.1353352832366127,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.0,
+            "angle_deg": 10.0
+          },
+          "score": 0.04393693362340742,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.40000000000000036,
+            "angle_deg": -10.0
+          },
+          "score": 0.03877420783172201,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.40000000000000036,
+            "angle_deg": -8.0
+          },
+          "score": 0.11943296826671962,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.40000000000000036,
+            "angle_deg": -6.0
+          },
+          "score": 0.28650479686019004,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.40000000000000036,
+            "angle_deg": -4.0
+          },
+          "score": 0.5352614285189902,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.40000000000000036,
+            "angle_deg": -2.0
+          },
+          "score": 0.7788007830714047,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.40000000000000036,
+            "angle_deg": 0.0
+          },
+          "score": 0.8824969025845952,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.40000000000000036,
+            "angle_deg": 2.0
+          },
+          "score": 0.7788007830714047,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.40000000000000036,
+            "angle_deg": 4.0
+          },
+          "score": 0.5352614285189902,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.40000000000000036,
+            "angle_deg": 6.0
+          },
+          "score": 0.28650479686019004,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.40000000000000036,
+            "angle_deg": 8.0
+          },
+          "score": 0.11943296826671962,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.40000000000000036,
+            "angle_deg": 10.0
+          },
+          "score": 0.03877420783172201,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8000000000000003,
+            "angle_deg": -10.0
+          },
+          "score": 0.026649097336355485,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8000000000000003,
+            "angle_deg": -8.0
+          },
+          "score": 0.0820849986238988,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8000000000000003,
+            "angle_deg": -6.0
+          },
+          "score": 0.196911675204194,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8000000000000003,
+            "angle_deg": -4.0
+          },
+          "score": 0.3678794411714422,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8000000000000003,
+            "angle_deg": -2.0
+          },
+          "score": 0.5352614285189902,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8000000000000003,
+            "angle_deg": 0.0
+          },
+          "score": 0.6065306597126333,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8000000000000003,
+            "angle_deg": 2.0
+          },
+          "score": 0.5352614285189902,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8000000000000003,
+            "angle_deg": 4.0
+          },
+          "score": 0.3678794411714422,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8000000000000003,
+            "angle_deg": 6.0
+          },
+          "score": 0.196911675204194,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8000000000000003,
+            "angle_deg": 8.0
+          },
+          "score": 0.0820849986238988,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8000000000000003,
+            "angle_deg": 10.0
+          },
+          "score": 0.026649097336355485,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.2000000000000002,
+            "angle_deg": -10.0
+          },
+          "score": 0.014264233908999256,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.2000000000000002,
+            "angle_deg": -8.0
+          },
+          "score": 0.0439369336234074,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.2000000000000002,
+            "angle_deg": -6.0
+          },
+          "score": 0.10539922456186429,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.2000000000000002,
+            "angle_deg": -4.0
+          },
+          "score": 0.19691167520419398,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.2000000000000002,
+            "angle_deg": -2.0
+          },
+          "score": 0.28650479686019,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.2000000000000002,
+            "angle_deg": 0.0
+          },
+          "score": 0.3246524673583496,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.2000000000000002,
+            "angle_deg": 2.0
+          },
+          "score": 0.28650479686019,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.2000000000000002,
+            "angle_deg": 4.0
+          },
+          "score": 0.19691167520419398,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.2000000000000002,
+            "angle_deg": 6.0
+          },
+          "score": 0.10539922456186429,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.2000000000000002,
+            "angle_deg": 8.0
+          },
+          "score": 0.0439369336234074,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.2000000000000002,
+            "angle_deg": 10.0
+          },
+          "score": 0.014264233908999256,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.6,
+            "angle_deg": -10.0
+          },
+          "score": 0.005946217356472094,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.6,
+            "angle_deg": -8.0
+          },
+          "score": 0.01831563888873418,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.6,
+            "angle_deg": -6.0
+          },
+          "score": 0.04393693362340742,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.6,
+            "angle_deg": -4.0
+          },
+          "score": 0.0820849986238988,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.6,
+            "angle_deg": -2.0
+          },
+          "score": 0.11943296826671962,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.6,
+            "angle_deg": 0.0
+          },
+          "score": 0.1353352832366127,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.6,
+            "angle_deg": 2.0
+          },
+          "score": 0.11943296826671962,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.6,
+            "angle_deg": 4.0
+          },
+          "score": 0.0820849986238988,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.6,
+            "angle_deg": 6.0
+          },
+          "score": 0.04393693362340742,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.6,
+            "angle_deg": 8.0
+          },
+          "score": 0.01831563888873418,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 1.6,
+            "angle_deg": 10.0
+          },
+          "score": 0.005946217356472094,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 2.0,
+            "angle_deg": -10.0
+          },
+          "score": 0.0019304541362277093,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 2.0,
+            "angle_deg": -8.0
+          },
+          "score": 0.005946217356472094,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 2.0,
+            "angle_deg": -6.0
+          },
+          "score": 0.014264233908999256,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 2.0,
+            "angle_deg": -4.0
+          },
+          "score": 0.026649097336355485,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 2.0,
+            "angle_deg": -2.0
+          },
+          "score": 0.03877420783172201,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 2.0,
+            "angle_deg": 0.0
+          },
+          "score": 0.04393693362340742,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 2.0,
+            "angle_deg": 2.0
+          },
+          "score": 0.03877420783172201,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 2.0,
+            "angle_deg": 4.0
+          },
+          "score": 0.026649097336355485,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 2.0,
+            "angle_deg": 6.0
+          },
+          "score": 0.014264233908999256,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 2.0,
+            "angle_deg": 8.0
+          },
+          "score": 0.005946217356472094,
+          "best_so_far": 1.0
+        },
+        {
+          "parameters": {
+            "offset_um": 2.0,
+            "angle_deg": 10.0
+          },
+          "score": 0.0019304541362277093,
+          "best_so_far": 1.0
+        }
+      ],
+      "seed": null
+    },
+    {
+      "algorithm": "RandomSearch",
+      "history": [
+        {
+          "parameters": {
+            "offset_um": 1.0958241942238534,
+            "angle_deg": -1.2224312049589532
+          },
+          "score": 0.3734963597242691,
+          "best_so_far": 0.3734963597242691
+        },
+        {
+          "parameters": {
+            "offset_um": 1.4343916796455298,
+            "angle_deg": 3.9473605811872776
+          },
+          "score": 0.12315240959756114,
+          "best_so_far": 0.3734963597242691
+        },
+        {
+          "parameters": {
+            "offset_um": -1.6232906084494019,
+            "angle_deg": 9.512447032735118
+          },
+          "score": 0.007548864840327474,
+          "best_so_far": 0.3734963597242691
+        },
+        {
+          "parameters": {
+            "offset_um": 1.0445588079614119,
+            "angle_deg": 5.721286105539075
+          },
+          "score": 0.15330373431688418,
+          "best_so_far": 0.3734963597242691
+        },
+        {
+          "parameters": {
+            "offset_um": -1.4875454692978165,
+            "angle_deg": -0.9922812420886569
+          },
+          "score": 0.172128701575843,
+          "best_so_far": 0.3734963597242691
+        },
+        {
+          "parameters": {
+            "offset_um": -0.5168079030696751,
+            "angle_deg": 8.535299776972035
+          },
+          "score": 0.08330315727102126,
+          "best_so_far": 0.3734963597242691
+        },
+        {
+          "parameters": {
+            "offset_um": 0.5754604803226582,
+            "angle_deg": 6.455232265416598
+          },
+          "score": 0.20994642555594398,
+          "best_so_far": 0.3734963597242691
+        },
+        {
+          "parameters": {
+            "offset_um": -0.22634320469067548,
+            "angle_deg": -5.455225564304462
+          },
+          "score": 0.3790798737780201,
+          "best_so_far": 0.3790798737780201
+        },
+        {
+          "parameters": {
+            "offset_um": 0.2183391480633392,
+            "angle_deg": -8.723654877916493
+          },
+          "score": 0.0893283776204872,
+          "best_so_far": 0.3790798737780201
+        },
+        {
+          "parameters": {
+            "offset_um": 1.3105246879703283,
+            "angle_deg": 2.6332879824412974
+          },
+          "score": 0.21045756540267446,
+          "best_so_far": 0.3790798737780201
+        },
+        {
+          "parameters": {
+            "offset_um": 1.0323509603414953,
+            "angle_deg": -2.9094806374026323
+          },
+          "score": 0.33382122154818245,
+          "best_so_far": 0.3790798737780201
+        },
+        {
+          "parameters": {
+            "offset_um": 1.882792097579613,
+            "angle_deg": 7.862422426443953
+          },
+          "score": 0.009083819023566652,
+          "best_so_far": 0.3790798737780201
+        },
+        {
+          "parameters": {
+            "offset_um": 1.1135339882950475,
+            "angle_deg": -6.1072258429606485
+          },
+          "score": 0.11832903209638995,
+          "best_so_far": 0.3790798737780201
+        },
+        {
+          "parameters": {
+            "offset_um": -0.1331159850918633,
+            "angle_deg": -9.123924684255424
+          },
+          "score": 0.07314721707804064,
+          "best_so_far": 0.3790798737780201
+        },
+        {
+          "parameters": {
+            "offset_um": -1.3828420317298087,
+            "angle_deg": 3.6609790648490925
+          },
+          "score": 0.14766878796956606,
+          "best_so_far": 0.3790798737780201
+        },
+        {
+          "parameters": {
+            "offset_um": 0.9790486236312685,
+            "angle_deg": 9.350194648684202
+          },
+          "score": 0.030778980106347113,
+          "best_so_far": 0.3790798737780201
+        },
+        {
+          "parameters": {
+            "offset_um": -0.6966985674473922,
+            "angle_deg": -2.5908058793026223
+          },
+          "score": 0.5548992738010896,
+          "best_so_far": 0.5548992738010896
+        },
+        {
+          "parameters": {
+            "offset_um": -0.12177675489676831,
+            "angle_deg": -6.2105728183142865
+          },
+          "score": 0.2961361191999045,
+          "best_so_far": 0.5548992738010896
+        },
+        {
+          "parameters": {
+            "offset_um": -1.4803139786581134,
+            "angle_deg": -0.48590147548132556
+          },
+          "score": 0.17918181089667157,
+          "best_so_far": 0.5548992738010896
+        },
+        {
+          "parameters": {
+            "offset_um": -1.0923626037964635,
+            "angle_deg": 3.396279893650206
+          },
+          "score": 0.27453096883556627,
+          "best_so_far": 0.5548992738010896
+        },
+        {
+          "parameters": {
+            "offset_um": -0.25139232451067706,
+            "angle_deg": 6.653563921156749
+          },
+          "score": 0.23863781546461071,
+          "best_so_far": 0.5548992738010896
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8010604080089965,
+            "angle_deg": -3.7526671723591782
+          },
+          "score": 0.39007944544760725,
+          "best_so_far": 0.5548992738010896
+        },
+        {
+          "parameters": {
+            "offset_um": 1.3290392055808042,
+            "angle_deg": 6.095287149936038
+          },
+          "score": 0.078789651625217,
+          "best_so_far": 0.5548992738010896
+        },
+        {
+          "parameters": {
+            "offset_um": -0.45008648387930217,
+            "angle_deg": -4.233437921395118
+          },
+          "score": 0.4875675984631232,
+          "best_so_far": 0.5548992738010896
+        },
+        {
+          "parameters": {
+            "offset_um": 0.729982015899902,
+            "angle_deg": -7.204950327813804
+          },
+          "score": 0.13021920900890027,
+          "best_so_far": 0.5548992738010896
+        },
+        {
+          "parameters": {
+            "offset_um": -1.2003671900995667,
+            "angle_deg": -9.85275460497989
+          },
+          "score": 0.015617897408180311,
+          "best_so_far": 0.5548992738010896
+        },
+        {
+          "parameters": {
+            "offset_um": 1.1476975100085536,
+            "angle_deg": 3.2970171318406436
+          },
+          "score": 0.2544203288896125,
+          "best_so_far": 0.5548992738010896
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8206615145053404,
+            "angle_deg": 5.614580620439359
+          },
+          "score": 0.2206295412211535,
+          "best_so_far": 0.5548992738010896
+        },
+        {
+          "parameters": {
+            "offset_um": -0.16433689784664018,
+            "angle_deg": 1.3748239190578744
+          },
+          "score": 0.9229632888399677,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -1.4408120074893702,
+            "angle_deg": -7.709398529280531
+          },
+          "score": 0.0308331202312287,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 0.6736118471618866,
+            "angle_deg": -0.5780758771373495
+          },
+          "score": 0.6942401537346433,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 0.2609444259247553,
+            "angle_deg": 5.299977148320512
+          },
+          "score": 0.39415864428452935,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 0.5388732800023632,
+            "angle_deg": 1.071588013159916
+          },
+          "score": 0.7689362413876779,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 0.23682864298165418,
+            "angle_deg": -3.920998038747756
+          },
+          "score": 0.5919914130627456,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -1.8767286617282424,
+            "angle_deg": -1.2656522153527519
+          },
+          "score": 0.06070632321178535,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -1.1416613087218832,
+            "angle_deg": -1.8294271255072765
+          },
+          "score": 0.3253474876362666,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 1.4136122930726644,
+            "angle_deg": -5.321210282693185
+          },
+          "score": 0.08663736263858218,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -1.766789033243736,
+            "angle_deg": -4.372322159560069
+          },
+          "score": 0.048020927028010946,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -0.8256249689332655,
+            "angle_deg": 3.238330294537901
+          },
+          "score": 0.4230536896188852,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 0.22812860936511337,
+            "angle_deg": 5.677964182128271
+          },
+          "score": 0.35059073106969313,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 0.6572541613095502,
+            "angle_deg": -1.8722627711985886
+          },
+          "score": 0.6395250480356245,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 1.2560815386641386,
+            "angle_deg": -6.660541601845922
+          },
+          "score": 0.07287949350564694,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -1.909151707464558,
+            "angle_deg": -8.199042784487165
+          },
+          "score": 0.007095414704475634,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8894374023858012,
+            "angle_deg": -0.7624553949722532
+          },
+          "score": 0.5292931564498008,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -1.3549128838655928,
+            "angle_deg": 0.020895502067270755
+          },
+          "score": 0.23830027510594395,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -1.3907515891473263,
+            "angle_deg": 3.9264075015547206
+          },
+          "score": 0.13630543785144197,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -0.2153748977038772,
+            "angle_deg": -2.3795754780703504
+          },
+          "score": 0.8080036596144042,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -0.7939516434084939,
+            "angle_deg": 2.605651862377769
+          },
+          "score": 0.4942876912757876,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -0.5527495577864383,
+            "angle_deg": -8.24700161367798
+          },
+          "score": 0.0940334888755228,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -1.5279763915179387,
+            "angle_deg": 9.23795329099029
+          },
+          "score": 0.011210978118082873,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 1.6343227628304282,
+            "angle_deg": 3.9941426762149916
+          },
+          "score": 0.07537617755586412,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -0.9365201541619217,
+            "angle_deg": 9.383527546954479
+          },
+          "score": 0.032167718829937825,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 1.1150036158631784,
+            "angle_deg": 4.337803783179911
+          },
+          "score": 0.2102847408877968,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -0.20255399142484531,
+            "angle_deg": -4.55516876309682
+          },
+          "score": 0.5063753707987778,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -1.6144361513860028,
+            "angle_deg": 8.052047930876832
+          },
+          "score": 0.01720832820854213,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -0.17689484066555572,
+            "angle_deg": -5.952732704095394
+          },
+          "score": 0.32245512830638695,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -0.77617350339739,
+            "angle_deg": 1.5843913788379194
+          },
+          "score": 0.5774651713939642,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -1.2929088682430732,
+            "angle_deg": 7.1322856818475096
+          },
+          "score": 0.055264763127789454,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 1.0340781193408404,
+            "angle_deg": 4.389259119018735
+          },
+          "score": 0.23753169678578975,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -0.27162784089958514,
+            "angle_deg": 2.546176814048863
+          },
+          "score": 0.7708694833072717,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 0.3363918756509423,
+            "angle_deg": 2.9969320310963994
+          },
+          "score": 0.6913694731755882,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -1.6622227154404436,
+            "angle_deg": -1.683851956587807
+          },
+          "score": 0.10569618842938375,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -1.83354330455243,
+            "angle_deg": -0.12018361510962094
+          },
+          "score": 0.07230073757919468,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -0.6805551506688587,
+            "angle_deg": -7.109516222679062
+          },
+          "score": 0.14350602736404516,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -1.5863881291097934,
+            "angle_deg": 1.7528914435542404
+          },
+          "score": 0.12718218244014234,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -1.3176281258524556,
+            "angle_deg": 8.502402367535943
+          },
+          "score": 0.026904779197361468,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 0.3242445588015799,
+            "angle_deg": -3.0626039093032587
+          },
+          "score": 0.6871194952178483,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 0.363661965925667,
+            "angle_deg": -9.54392257940605
+          },
+          "score": 0.052351632846633196,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 1.8342368529657813,
+            "angle_deg": -0.35393126114199447
+          },
+          "score": 0.07190773033758693,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": 1.1309409090011449,
+            "angle_deg": -8.345400001551228
+          },
+          "score": 0.041766183620657545,
+          "best_so_far": 0.9229632888399677
+        },
+        {
+          "parameters": {
+            "offset_um": -0.05336667664735861,
+            "angle_deg": -0.18586011290958204
+          },
+          "score": 0.9967009527303774,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 1.7513058198999314,
+            "angle_deg": 1.4345610475215071
+          },
+          "score": 0.08539553378366703,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -0.10604239577218477,
+            "angle_deg": -4.660486738162128
+          },
+          "score": 0.5028117576975306,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -0.6737240106297913,
+            "angle_deg": 0.4134480494307553
+          },
+          "score": 0.6977081506035777,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -0.24435415877981326,
+            "angle_deg": -9.567758402393391
+          },
+          "score": 0.054621093255121066,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 1.3051676967774313,
+            "angle_deg": 7.923215436795335
+          },
+          "score": 0.03715628988175214,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.439003644005557,
+            "angle_deg": 1.0807228707809884
+          },
+          "score": 0.19123393980330153,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.5656970354582258,
+            "angle_deg": 3.4448018607962343
+          },
+          "score": 0.10167284717804635,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -0.8750648646439667,
+            "angle_deg": 3.1884526938380358
+          },
+          "score": 0.40014515015147434,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 0.9079784571475304,
+            "angle_deg": 5.37294983835314
+          },
+          "score": 0.21305064472755686,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.5690362161764138,
+            "angle_deg": 8.320236902752157
+          },
+          "score": 0.016795189721392694,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.0791440364204767,
+            "angle_deg": -9.251748876476405
+          },
+          "score": 0.0277465041402316,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 0.21940987756593344,
+            "angle_deg": -2.5815543227512254
+          },
+          "score": 0.7820214356304244,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 1.3191589725296526,
+            "angle_deg": 6.165029441286038
+          },
+          "score": 0.07829644660511977,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -0.7314444287091386,
+            "angle_deg": 9.057987901394899
+          },
+          "score": 0.05069385483415368,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -0.8363286474395255,
+            "angle_deg": 0.30114258463429167
+          },
+          "score": 0.5773677631535407,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -0.976139637729589,
+            "angle_deg": 8.720871400979266
+          },
+          "score": 0.0441091559557817,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.3415687296719274,
+            "angle_deg": -9.10178761215342
+          },
+          "score": 0.01840876710747603,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -0.25961175998784825,
+            "angle_deg": 9.847511281116741
+          },
+          "score": 0.04581809877118638,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 1.5667090650196558,
+            "angle_deg": 4.972160389138985
+          },
+          "score": 0.06786649224843827,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 1.5631699635140994,
+            "angle_deg": 7.8689327939572635
+          },
+          "score": 0.021408058440259923,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 0.07543344154579623,
+            "angle_deg": -3.6814189633841394
+          },
+          "score": 0.65182973326776,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 1.088049728443952,
+            "angle_deg": 3.233225263355221
+          },
+          "score": 0.28605702772510133,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -0.5053690845051597,
+            "angle_deg": -8.110666638769695
+          },
+          "score": 0.10484778368349329,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 0.987158445396104,
+            "angle_deg": -4.750789681542706
+          },
+          "score": 0.23070245217742982,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 1.747252602135117,
+            "angle_deg": -5.180588499886305
+          },
+          "score": 0.039804526434371025,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.508968270354056,
+            "angle_deg": 6.622253442498124
+          },
+          "score": 0.04288042975484781,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.3868627335020238,
+            "angle_deg": -6.414633836845218
+          },
+          "score": 0.0615129663992776,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 0.397531166083374,
+            "angle_deg": 7.49124081674929
+          },
+          "score": 0.15302242937909774,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.214261337141707,
+            "angle_deg": -3.793526541998105
+          },
+          "score": 0.20157116867758554,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 1.1096193529647103,
+            "angle_deg": 9.436528521219348
+          },
+          "score": 0.023643424001499942,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 0.0029647448093692574,
+            "angle_deg": -7.1220499489749844
+          },
+          "score": 0.20492335955432842,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.9442548491671938,
+            "angle_deg": -5.406879400022895
+          },
+          "score": 0.020925276861988036,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.4727111288539159,
+            "angle_deg": 3.55317347225715
+          },
+          "score": 0.1238147793106024,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.5126699814858755,
+            "angle_deg": 0.12659863241266045
+          },
+          "score": 0.1672720027833839,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 0.7770497425715459,
+            "angle_deg": 1.6223321844180472
+          },
+          "score": 0.5746624365661136,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.2008973933597695,
+            "angle_deg": 6.082490523645255
+          },
+          "score": 0.10199516849441025,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 0.8616285184632066,
+            "angle_deg": 4.779680078310836
+          },
+          "score": 0.2741938831169157,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.475768993770747,
+            "angle_deg": -7.524923926993107
+          },
+          "score": 0.031086091237616104,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 1.7102502040260306,
+            "angle_deg": -2.0484361235011868
+          },
+          "score": 0.08925574259939623,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -0.796205232876241,
+            "angle_deg": -0.22831909296933262
+          },
+          "score": 0.6084157437971544,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 0.6514568510543297,
+            "angle_deg": 9.112465140939399
+          },
+          "score": 0.053586060929323394,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -0.85421509247178,
+            "angle_deg": 8.496168586240543
+          },
+          "score": 0.059258698753187976,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.9005620344549747,
+            "angle_deg": 1.1039608465364932
+          },
+          "score": 0.05726494715026731,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 0.5359004467243405,
+            "angle_deg": -7.882051924984934
+          },
+          "score": 0.11465503704901918,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.4386416117443495,
+            "angle_deg": -1.6177136136739243
+          },
+          "score": 0.1829163682407822,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 1.8649276485727269,
+            "angle_deg": 1.9208510646874561
+          },
+          "score": 0.05886817840118427,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 1.732092886400845,
+            "angle_deg": 6.087218312259417
+          },
+          "score": 0.03014282178798885,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -0.13047359377883394,
+            "angle_deg": 5.695268985043748
+          },
+          "score": 0.3581056321118118,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": -1.928652864092049,
+            "angle_deg": -7.817120064685302
+          },
+          "score": 0.008102178710439674,
+          "best_so_far": 0.9967009527303774
+        },
+        {
+          "parameters": {
+            "offset_um": 1.3177144595309453,
+            "angle_deg": 5.936341766503235
+          },
+          "score": 0.08562354692032563,
+          "best_so_far": 0.9967009527303774
+        }
+      ],
+      "seed": 42
+    }
+  ]
+}
