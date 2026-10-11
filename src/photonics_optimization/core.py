@@ -1,5 +1,5 @@
 """Shared contracts and validated evaluation history (maximization)."""
-from abc import ABC, abstractmethod
+from abc import ABC
 from dataclasses import dataclass
 from collections.abc import Callable, Iterable, Mapping, Sequence
 import math
@@ -35,26 +35,32 @@ class OptimizationResult:
         return max(self.history, key=lambda item: item.score)
 
 class Optimizer(ABC):
-    """Implement candidates; shared optimize evaluates and records every point."""
+    """Implement static candidates or adaptive evaluations; optimize records history."""
     def __init__(self, parameters: Sequence[Parameter]) -> None:
         self.parameters = tuple(parameters)
         if not self.parameters or len({p.name for p in self.parameters}) != len(self.parameters):
             raise ValueError("Search space must be nonempty with unique names")
 
-    @abstractmethod
     def candidates(self) -> Iterable[dict[str, float]]:
-        """Yield candidates within the search space."""
+        """Yield static candidates; adaptive optimizers implement evaluations instead."""
+        raise NotImplementedError("This optimizer requires objective feedback")
 
-    def optimize(self, objective: Objective) -> OptimizationResult:
-        history: list[Evaluation] = []
+    @staticmethod
+    def evaluate(point: Mapping[str, float], objective: Objective, best: float) -> Evaluation:
+        score = float(objective(dict(point)))
+        if not math.isfinite(score):
+            raise ValueError("Objective returned a non-finite score")
+        return Evaluation(dict(point), score, max(best, score))
+
+    def evaluations(self, objective: Objective) -> Iterable[Evaluation]:
         best = -math.inf
         for point in self.candidates():
-            # Objective receives a copy so mutations cannot corrupt recorded candidates.
-            score = float(objective(dict(point)))
-            if not math.isfinite(score):
-                raise ValueError("Objective returned a non-finite score")
-            best = max(best, score)
-            history.append(Evaluation(dict(point), score, best))
+            evaluation = self.evaluate(point, objective, best)
+            best = evaluation.best_so_far
+            yield evaluation
+
+    def optimize(self, objective: Objective) -> OptimizationResult:
+        history = tuple(self.evaluations(objective))
         if not history:
             raise ValueError("Optimizer generated no candidates")
-        return OptimizationResult(type(self).__name__, tuple(history), getattr(self, "seed", None))
+        return OptimizationResult(type(self).__name__, history, getattr(self, "seed", None))

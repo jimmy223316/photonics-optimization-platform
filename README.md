@@ -1,6 +1,6 @@
 # Photonics Optimization Platform
 
-A modular Python prototype for maximizing optical coupling objectives with **Grid Search** and **Random Search**. Version 0.1 uses an explicitly synthetic analytic function to exercise the optimization pipeline.
+A modular Python prototype for maximizing optical coupling objectives with **Grid Search**, **Random Search**, and **Bayesian Optimization**. Version 0.2 uses an explicitly synthetic analytic function to exercise the optimization pipeline.
 
 **Scientific scope:** No electromagnetic solver, calibrated device model, or experimental data is included. Efficiencies and plots are toy-function evaluations, not scientific simulation results or predicted device performance.
 
@@ -22,7 +22,7 @@ The installed `photonics-demo` command runs the same example. No paid APIs, exte
 
 ![Synthetic convergence comparison](examples/convergence.png)
 
-The demo evaluates each algorithm exactly 121 times: an 11×11 Cartesian grid and 121 uniform random samples with seed 42. `examples/results.json` stores all candidates, scores, running best values, search bounds, seed, and the synthetic-data label. The plot is generated from these recorded evaluations. Grid order affects its curve; a single random seed is illustrative and does not establish algorithm superiority. The grid includes the analytically known peak by construction.
+The demo evaluates each algorithm exactly 121 times: an 11×11 Cartesian grid, 121 uniform random samples, and 121 adaptive Bayesian evaluations with seed 42. `examples/results.json` stores all candidates, scores, running best values, search bounds, seed, and the synthetic-data label. The plot is generated from these recorded evaluations. Grid order affects its curve; a single random seed is illustrative and does not establish algorithm superiority. The grid includes the analytically known peak by construction.
 
 ## Synthetic objective
 
@@ -31,7 +31,7 @@ eta(offset_um, angle_deg) = exp(-0.5 * ((offset_um / 0.8)^2 + (angle_deg / 4)^2)
 offset_um ∈ [-2, 2]; angle_deg ∈ [-10, 10]
 ```
 
-The arbitrary widths and illustrative unit labels are not fitted to any device. The function lies in [0, 1] and reaches 1 at (0, 0). Both optimizers **maximize** the objective. They also support arbitrary finite scalar scores, including negative values.
+The arbitrary widths and illustrative unit labels are not fitted to any device. The function lies in [0, 1] and reaches 1 at (0, 0). All optimizers **maximize** the objective. They also support arbitrary finite scalar scores, including negative values.
 
 ## Python API
 
@@ -45,7 +45,59 @@ result = RandomSearch(space, budget=100, seed=42).optimize(
 print(result.best.parameters, result.best.score)
 ```
 
-`Optimizer` defines the shared evaluation contract; implement `candidates()` for new search methods. `Parameter` validates bounds. `OptimizationResult` retains the evaluation history and best candidate. Objectives receive a candidate copy and must return a finite scalar; exceptions propagate. Random Search resets its local NumPy generator per run, making repeated runs with the same configuration reproducible. Grid Search includes both endpoints and lazily enumerates points, but history storage still grows as points-per-dimension raised to the number of parameters. This prototype is intended for small search spaces.
+`Optimizer` defines the shared evaluation contract; implement `candidates()` for static search methods or `evaluations(objective)` for adaptive methods. `Parameter` validates bounds. `OptimizationResult` retains the evaluation history and best candidate. Objectives receive a candidate copy and must return a finite scalar; exceptions propagate. Random Search resets its local NumPy generator per run, making repeated runs with the same configuration reproducible. Grid Search includes both endpoints and lazily enumerates points, but history storage still grows as points-per-dimension raised to the number of parameters. This prototype is intended for small search spaces.
+
+## Bayesian Optimization
+
+```python
+from photonics_optimization import BayesianOptimization, SyntheticBackend, default_parameters
+
+result = BayesianOptimization(
+    default_parameters(), budget=30, initial_points=5,
+    candidate_pool=512, seed=42, xi=0.01,
+).optimize(SyntheticBackend())
+print(result.best.parameters, result.best.score)
+```
+
+Bayesian Optimization uses scikit-learn's Gaussian-process regressor with a fixed Matérn 2.5 kernel (length scale 0.25 in normalized parameter coordinates), normalized targets, and numerical jitter. After initial uniform samples it maximizes expected improvement over a fresh random candidate pool. `xi` controls the improvement margin. It uses only SciPy and scikit-learn, both free Python packages. It is a sequential, small-budget implementation; GP fitting has cubic scaling in observations and pool search approximates acquisition maximization. There is no guarantee of finding the global optimum, and surrogate uncertainty is not physical validation. Repeatability assumes the same dependency versions; dependency ranges do not promise bitwise identical results across releases.
+
+## CSV import and analysis
+
+```bash
+photonics-analyze examples/datasets/synthetic_coupling.csv \
+  --parameters offset_um angle_deg --data-kind synthetic_analytic_toy
+```
+
+For an external export, explicitly select your numeric parameter columns:
+
+```bash
+photonics-analyze your_results.csv --parameters gap_nm width_nm \
+  --efficiency-column eta
+```
+
+CSV files need a unique header and at least one data row. Required values must be finite numbers, and coupling efficiencies must be fractions in [0, 1] (convert percentages before import). Extra columns are permitted but are not retained in the records. Repeated parameter tuples are rejected: combine replicates explicitly before importing if appropriate. Import errors identify malformed rows. UTF-8 with or without a byte-order mark is supported.
+
+Analysis reports count, mean, population standard deviation, min/max efficiency, best observed parameters, and parameter ranges. It does not infer causality, interpolate unseen points, or establish solver validity. External imports default to `external_unvalidated`; declaring a synthetic example does not change the `scientifically_validated: false` flag. Preserve geometry, units, wavelength, materials, solver settings/version, normalization, and independent validation evidence alongside your original exports.
+
+```python
+from pathlib import Path
+from photonics_optimization import load_simulation_csv, CSVReplayBackend, GridSearch, default_parameters
+
+data = load_simulation_csv(
+    Path("examples/datasets/synthetic_coupling.csv"),
+    ["offset_um", "angle_deg"], data_kind="synthetic_analytic_toy",
+)
+print(data.summary())
+result = GridSearch(default_parameters(), 3).optimize(CSVReplayBackend(data))
+```
+
+CSV replay returns only exact recorded parameter tuples. Random and Bayesian searches generally propose unrecorded points, so CSV replay will raise an error for them. Use CSV analysis to find the best recorded sample; supplying a dataset does not create a continuous simulator. Any future interpolation backend must be explicit about its assumptions and provenance.
+
+## Simulation backend interface
+
+`SimulationBackend.run(parameters)` returns a `SimulationResult` with parameters, coupling efficiency, backend, data kind, source, and validation status. Backend objects are callable objectives usable by all optimizers. Returned parameters must match the requested point, and efficiency must be finite and within [0, 1]. Exceptions propagate without fabricated fallback scores. `SyntheticBackend` is executable without simulation software; `CSVReplayBackend` replays recorded data.
+
+A future `LumericalAdapter(LumericalConfig(...))` exposes project path, parameter-to-project mapping, and an efficiency result identifier. Its `run()` always raises `NotImplementedError`: no Lumerical API is imported, no license is required, and **the interface has not been implemented or validated against Lumerical**. See [the backend design](docs/BACKENDS.md) for future lifecycle and validation requirements.
 
 ## Repository structure
 

@@ -7,6 +7,13 @@
 - [x] Add pytest coverage, push/PR CI, and scheduled status reporting.
 - [x] Add README and Codex handoff files.
 
+## Completed in v0.2
+
+- [x] Add Bayesian Optimization with reproducibility and adaptive-feedback tests.
+- [x] Import and analyze external CSV records without asserting scientific validation.
+- [x] Add synthetic/CSV backend implementations and a future Lumerical interface.
+- [x] Document limitations and add reproducible synthetic CSV fixtures.
+
 ## Next tasks (priority order)
 
 1. Add evaluation/memory guards for large Cartesian grids; test rejection before expensive runs.
