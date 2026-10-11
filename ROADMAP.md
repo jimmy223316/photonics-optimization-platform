@@ -19,7 +19,14 @@
 - Multiple-seed comparisons with uncertainty and equal evaluation budgets.
 - Stable versioned result schema, export/import, and configurable CLI search spaces.
 
-## v0.3 — solver integration
+## v0.3 — optional Meep integration
+
+- Add serial PyMeep 2D taper simulations with tutorial geometry, reference normalization, input reflection, output fundamental-mode transmission, and DFT Ez plots.
+- Add Cartesian taper-length/output-width sweeps and existing-optimizer integration.
+- Use a separate supported Conda environment and an opt-in solver test workflow.
+- Retain explicit 2D/unvalidated provenance. Reproduction of the tutorial is not full physical validation.
+
+## Next — solver development
 
 - Define solver adapters without coupling search methods to any solver.
 - Evaluate an open-source optical solver and document installation, units, geometry, wavelength, and assumptions.

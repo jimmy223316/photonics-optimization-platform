@@ -13,3 +13,7 @@
 - Regenerate CSV fixtures with `python scripts/generate_csv_example.py`. Never rename synthetic examples as external solver results.
 - LumericalAdapter is an unimplemented, unvalidated design boundary; do not add proprietary dependencies to the default installation.
 - Keep exact CSV replay distinct from any future interpolation or surrogate backend.
+
+- Keep PyMeep optional, installed through environment-meep.yml rather than pip. Never replace unavailable FDTD runs with synthetic results.
+- Run real Meep tests only with RUN_MEEP_TESTS=1 in the Conda environment. Record opt-in solver checks separately from default tests.
+- Preserve raw FDTD powers and 2D/unvalidated provenance. Do not clip numerical efficiencies or claim full 3D device accuracy.

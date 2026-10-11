@@ -1,8 +1,8 @@
 # Photonics Optimization Platform
 
-A modular Python prototype for maximizing optical coupling objectives with **Grid Search**, **Random Search**, and **Bayesian Optimization**. Version 0.2 uses an explicitly synthetic analytic function to exercise the optimization pipeline.
+A modular Python prototype for maximizing optical coupling objectives with **Grid Search**, **Random Search**, and **Bayesian Optimization**. Version 0.3 retains the reproducible synthetic demo and adds an optional Meep 2D FDTD taper backend.
 
-**Scientific scope:** No electromagnetic solver, calibrated device model, or experimental data is included. Efficiencies and plots are toy-function evaluations, not scientific simulation results or predicted device performance.
+**Scientific scope:** The default demo and CSV fixtures are explicitly synthetic. Optional Meep outputs are actual 2D FDTD calculations with separate provenance; they are unvalidated numerical examples, not a full 3D silicon photonics device or calibrated fabrication predictions. No experimental data is included.
 
 ## Quick start
 
@@ -98,6 +98,19 @@ CSV replay returns only exact recorded parameter tuples. Random and Bayesian sea
 `SimulationBackend.run(parameters)` returns a `SimulationResult` with parameters, coupling efficiency, backend, data kind, source, and validation status. Backend objects are callable objectives usable by all optimizers. Returned parameters must match the requested point, and efficiency must be finite and within [0, 1]. Exceptions propagate without fabricated fallback scores. `SyntheticBackend` is executable without simulation software; `CSVReplayBackend` replays recorded data.
 
 A future `LumericalAdapter(LumericalConfig(...))` exposes project path, parameter-to-project mapping, and an efficiency result identifier. Its `run()` always raises `NotImplementedError`: no Lumerical API is imported, no license is required, and **the interface has not been implemented or validated against Lumerical**. See [the backend design](docs/BACKENDS.md) for future lifecycle and validation requirements.
+
+## Optional Meep FDTD backend
+
+Use the separate [Conda environment](environment-meep.yml) for free PyMeep; ordinary Python installs do not require Meep. The [Meep guide](docs/MEEP.md) explains the official taper tutorial reproduction, eigenmode source, PML, straight-guide input normalization, output fundamental-mode decomposition, field plots, length/width sweeps, and integration with all three optimizers.
+
+```bash
+conda env create -f environment-meep.yml
+conda activate photonics-meep
+python -m pip install --no-deps --no-build-isolation -e .
+python -m photonics_optimization.meep_sweep --diagnostics-only --output artifacts/meep-tutorial
+```
+
+Actual solver runs are labeled `fdtd_meep_2d_unvalidated`; synthetic artifacts retain their existing label. See [bundled actual run notes and plots](examples/meep/README.md). Missing PyMeep raises an installation error without generating FDTD scores. The future Lumerical adapter remains unimplemented and unvalidated.
 
 ## Repository structure
 

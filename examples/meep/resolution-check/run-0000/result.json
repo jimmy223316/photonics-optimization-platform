@@ -1,0 +1,41 @@
+{
+  "data_kind": "fdtd_meep_2d_unvalidated",
+  "scientifically_validated": false,
+  "model_dimension": 2,
+  "is_full_3d_device": false,
+  "solver": "Meep",
+  "solver_version": "1.35.0",
+  "tutorial": "https://meep.readthedocs.io/en/latest/Python_Tutorials/Mode_Decomposition/#reflectance-of-a-waveguide-taper",
+  "parameters": {
+    "taper_length_um": 1.0,
+    "output_width_um": 2.0
+  },
+  "configuration": {
+    "resolution": 35,
+    "input_width_um": 1.0,
+    "straight_length_um": 10.0,
+    "air_padding_um": 3.0,
+    "pml_x_um": 6.0,
+    "pml_y_um": 2.0,
+    "wavelength_um": 6.67,
+    "epsilon": 12.0,
+    "decay_interval": 50.0,
+    "decay_threshold": 1e-09,
+    "max_time": 4000.0
+  },
+  "polarization": "Ez; ODD_Z + EVEN_Y",
+  "mode_band": 1,
+  "reference_time": 450.1142857142857,
+  "simulation_time": 450.1142857142857,
+  "powers": {
+    "incident_mode_power": 1112.5757427071492,
+    "incident_flux": 1112.5792988950875,
+    "fundamental_transmission": 0.9869888065760429,
+    "fundamental_reflection": 0.0003357428031376234,
+    "reflected_flux_fraction": 0.00041338299239514914,
+    "output_flux_fraction": 0.9949564335457775
+  },
+  "coupling_efficiency": 0.9869888065760429,
+  "optimization_acceptable": true,
+  "numerical_warnings": []
+}
