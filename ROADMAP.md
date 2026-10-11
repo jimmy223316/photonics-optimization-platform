@@ -6,7 +6,14 @@
 - Grid Search and seeded Random Search with full evaluation histories.
 - Reproducible synthetic example, plots, tests, CI, and weekly reporting.
 
-## v0.2 — optimization usability
+## v0.2 — completed extensions
+
+- Seeded Gaussian-process Bayesian Optimization with expected improvement.
+- Strict external CSV import, descriptive analysis, and synthetic example datasets.
+- Modular backend contract, executable synthetic backend, exact CSV replay.
+- Unimplemented and unvalidated future Lumerical adapter configuration/interface.
+
+## Next — optimization usability
 
 - Per-parameter grid resolution and explicit evaluation/memory limits.
 - Multiple-seed comparisons with uncertainty and equal evaluation budgets.

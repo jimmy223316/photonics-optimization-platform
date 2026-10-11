@@ -5,12 +5,14 @@ import json
 from pathlib import Path
 from .objective import default_parameters, synthetic_coupling
 from .search import GridSearch, RandomSearch
+from .bayesian import BayesianOptimization
 from .plotting import plot_convergence
 
 def run_demo(output: Path, seed: int = 42) -> None:
     space = default_parameters()
     results = [GridSearch(space, 11).optimize(synthetic_coupling),
-               RandomSearch(space, 121, seed).optimize(synthetic_coupling)]
+               RandomSearch(space, 121, seed).optimize(synthetic_coupling),
+               BayesianOptimization(space, 121, seed=seed).optimize(synthetic_coupling)]
     output.mkdir(parents=True, exist_ok=True)
     plot_convergence(results, output / "convergence.png")
     payload = {"data_kind": "synthetic_analytic_toy", "scientifically_validated": False,

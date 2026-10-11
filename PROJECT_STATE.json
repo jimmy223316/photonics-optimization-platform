@@ -1,23 +1,24 @@
 {
   "schema_version": 1,
   "project": "Photonics Optimization Platform",
-  "version": "0.1.0",
-  "phase": "synthetic_prototype",
+  "version": "0.2.0",
+  "phase": "optimization_and_data_prototype",
   "python_minimum": "3.10",
   "algorithms": [
     "GridSearch",
-    "RandomSearch"
+    "RandomSearch",
+    "BayesianOptimization"
   ],
   "objective_kind": "synthetic_analytic_toy",
   "scientifically_validated": false,
   "external_api_keys_required": false,
   "local_tests": {
     "status": "passed",
-    "passed": 24,
+    "passed": 66,
     "failed": 0,
     "python": "3.12.14",
-    "command": "python -m pytest --junitxml=work/pytest.xml",
-    "verified_date": "2026-10-11"
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest --junitxml=work/pr2-rebase-tests.xml",
+    "verified_date": "2026-10-12"
   },
   "remote_ci": {
     "status": "not_yet_verified"
@@ -26,5 +27,18 @@
     "cron_utc": "0 1 * * 1",
     "activation": "after_merge_to_default_branch"
   },
-  "next_task": "Add explicit evaluation and memory guards for Cartesian grids"
+  "next_task": "Add explicit evaluation and memory guards for Cartesian grids",
+  "simulation_backends": {
+    "implemented": [
+      "SyntheticBackend",
+      "CSVReplayBackend"
+    ],
+    "lumerical_adapter": "unimplemented_unvalidated_design_only"
+  },
+  "csv_analysis": {
+    "implemented": true,
+    "external_data_validation": "not_established_by_import",
+    "replay_mode": "exact_recorded_points_only"
+  },
+  "pull_request_base": "main"
 }

@@ -9,3 +9,7 @@
 - Use feature branches and pull requests. Do not merge into main unless explicitly authorized.
 - Update PROJECT_STATE.json and TASK_QUEUE.md with completed work and verified test results; distinguish local checks from remote CI.
 - Avoid unrequested changes to existing user work.
+
+- Regenerate CSV fixtures with `python scripts/generate_csv_example.py`. Never rename synthetic examples as external solver results.
+- LumericalAdapter is an unimplemented, unvalidated design boundary; do not add proprietary dependencies to the default installation.
+- Keep exact CSV replay distinct from any future interpolation or surrogate backend.
