@@ -21,7 +21,7 @@ def generate_report(junit: Path, output: Path, state: Path) -> None:
                   f"failures: {totals['failures']}; errors: {totals['errors']}; skipped: {totals['skipped']}"]
     else:
         lines += ["Test status: UNKNOWN — JUnit output missing; tests may not have run."]
-    lines += ["", "Scientific status: synthetic analytic objective only; no validated simulations or measurements.",
+    lines += ["", "Scientific status: no validated simulations or measurements. See PROJECT_STATE.json for backend and data provenance.",
               "", "Next tasks: see TASK_QUEUE.md and ROADMAP.md.", "",
               "This report reflects this workflow run; it does not summarize historical runs."]
     output.parent.mkdir(parents=True, exist_ok=True)

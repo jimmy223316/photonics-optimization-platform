@@ -31,7 +31,7 @@ class SimulationDataset:
             raise ValueError("Dataset requires unique parameter names")
         if any(not name.strip() for name in self.parameter_names) or not self.records:
             raise ValueError("Dataset requires named parameters and records")
-        if self.data_kind not in {"synthetic_analytic_toy", "external_unvalidated"}:
+        if self.data_kind not in {"synthetic_analytic_toy", "external_unvalidated", "fdtd_meep_2d_unvalidated"}:
             raise ValueError("Dataset data_kind must not imply scientific validation")
         seen: set[tuple[float, ...]] = set()
         for record in self.records:
@@ -67,7 +67,7 @@ def load_simulation_csv(path: Path, parameter_names: Sequence[str],
         raise ValueError("Provide unique, nonempty parameter column names")
     if not efficiency_column or efficiency_column in names:
         raise ValueError("Efficiency column must be distinct from parameter columns")
-    if data_kind not in {"synthetic_analytic_toy", "external_unvalidated"}:
+    if data_kind not in {"synthetic_analytic_toy", "external_unvalidated", "fdtd_meep_2d_unvalidated"}:
         raise ValueError("Unsupported data_kind; importing does not validate scientific accuracy")
     records: list[SimulationRecord] = []
     seen: set[tuple[float, ...]] = set()
@@ -104,7 +104,7 @@ def main() -> None:
     parser.add_argument("csv", type=Path)
     parser.add_argument("--parameters", nargs="+", required=True)
     parser.add_argument("--efficiency-column", default="coupling_efficiency")
-    parser.add_argument("--data-kind", choices=["external_unvalidated", "synthetic_analytic_toy"], default="external_unvalidated")
+    parser.add_argument("--data-kind", choices=["external_unvalidated", "synthetic_analytic_toy", "fdtd_meep_2d_unvalidated"], default="external_unvalidated")
     args = parser.parse_args()
     data = load_simulation_csv(args.csv, args.parameters, args.efficiency_column, args.data_kind)
     print(json.dumps(data.summary(), indent=2))

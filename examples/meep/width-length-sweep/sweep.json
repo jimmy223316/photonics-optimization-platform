@@ -1,0 +1,211 @@
+{
+  "data_kind": "fdtd_meep_2d_unvalidated",
+  "scientifically_validated": false,
+  "optimization": {
+    "algorithm": "TaperSweep",
+    "history": [
+      {
+        "parameters": {
+          "taper_length_um": 1,
+          "output_width_um": 2
+        },
+        "score": 0.9870870205996471,
+        "best_so_far": 0.9870870205996471
+      },
+      {
+        "parameters": {
+          "taper_length_um": 1,
+          "output_width_um": 2.5
+        },
+        "score": 0.9506229380333441,
+        "best_so_far": 0.9870870205996471
+      },
+      {
+        "parameters": {
+          "taper_length_um": 4,
+          "output_width_um": 2
+        },
+        "score": 0.9993290701781959,
+        "best_so_far": 0.9993290701781959
+      },
+      {
+        "parameters": {
+          "taper_length_um": 4,
+          "output_width_um": 2.5
+        },
+        "score": 0.9975619419013975,
+        "best_so_far": 0.9993290701781959
+      }
+    ],
+    "seed": null
+  },
+  "optimization_rejected_points": [],
+  "runs": [
+    {
+      "data_kind": "fdtd_meep_2d_unvalidated",
+      "scientifically_validated": false,
+      "model_dimension": 2,
+      "is_full_3d_device": false,
+      "solver": "Meep",
+      "solver_version": "1.35.0",
+      "tutorial": "https://meep.readthedocs.io/en/latest/Python_Tutorials/Mode_Decomposition/#reflectance-of-a-waveguide-taper",
+      "parameters": {
+        "taper_length_um": 1,
+        "output_width_um": 2
+      },
+      "configuration": {
+        "resolution": 25,
+        "input_width_um": 1.0,
+        "straight_length_um": 10.0,
+        "air_padding_um": 3.0,
+        "pml_x_um": 6.0,
+        "pml_y_um": 2.0,
+        "wavelength_um": 6.67,
+        "epsilon": 12.0,
+        "decay_interval": 50.0,
+        "decay_threshold": 1e-09,
+        "max_time": 4000.0
+      },
+      "polarization": "Ez; ODD_Z + EVEN_Y",
+      "mode_band": 1,
+      "reference_time": 450.18,
+      "simulation_time": 450.18,
+      "powers": {
+        "incident_mode_power": 1112.9219810553507,
+        "incident_flux": 1112.9276301716116,
+        "fundamental_transmission": 0.9870870205996471,
+        "fundamental_reflection": 0.0003342465756150714,
+        "reflected_flux_fraction": 0.0004119001301839263,
+        "output_flux_fraction": 0.9951283252909043
+      },
+      "coupling_efficiency": 0.9870870205996471,
+      "optimization_acceptable": true,
+      "numerical_warnings": []
+    },
+    {
+      "data_kind": "fdtd_meep_2d_unvalidated",
+      "scientifically_validated": false,
+      "model_dimension": 2,
+      "is_full_3d_device": false,
+      "solver": "Meep",
+      "solver_version": "1.35.0",
+      "tutorial": "https://meep.readthedocs.io/en/latest/Python_Tutorials/Mode_Decomposition/#reflectance-of-a-waveguide-taper",
+      "parameters": {
+        "taper_length_um": 1.0,
+        "output_width_um": 2.5
+      },
+      "configuration": {
+        "resolution": 25,
+        "input_width_um": 1.0,
+        "straight_length_um": 10.0,
+        "air_padding_um": 3.0,
+        "pml_x_um": 6.0,
+        "pml_y_um": 2.0,
+        "wavelength_um": 6.67,
+        "epsilon": 12.0,
+        "decay_interval": 50.0,
+        "decay_threshold": 1e-09,
+        "max_time": 4000.0
+      },
+      "polarization": "Ez; ODD_Z + EVEN_Y",
+      "mode_band": 1,
+      "reference_time": 450.18,
+      "simulation_time": 450.18,
+      "powers": {
+        "incident_mode_power": 1112.8265660988718,
+        "incident_flux": 1112.8448800929466,
+        "fundamental_transmission": 0.9506229380333441,
+        "fundamental_reflection": 0.0008465319535515487,
+        "reflected_flux_fraction": 0.0008814852481569198,
+        "output_flux_fraction": 0.9978205226795323
+      },
+      "coupling_efficiency": 0.9506229380333441,
+      "optimization_acceptable": true,
+      "numerical_warnings": []
+    },
+    {
+      "data_kind": "fdtd_meep_2d_unvalidated",
+      "scientifically_validated": false,
+      "model_dimension": 2,
+      "is_full_3d_device": false,
+      "solver": "Meep",
+      "solver_version": "1.35.0",
+      "tutorial": "https://meep.readthedocs.io/en/latest/Python_Tutorials/Mode_Decomposition/#reflectance-of-a-waveguide-taper",
+      "parameters": {
+        "taper_length_um": 4,
+        "output_width_um": 2
+      },
+      "configuration": {
+        "resolution": 25,
+        "input_width_um": 1.0,
+        "straight_length_um": 10.0,
+        "air_padding_um": 3.0,
+        "pml_x_um": 6.0,
+        "pml_y_um": 2.0,
+        "wavelength_um": 6.67,
+        "epsilon": 12.0,
+        "decay_interval": 50.0,
+        "decay_threshold": 1e-09,
+        "max_time": 4000.0
+      },
+      "polarization": "Ez; ODD_Z + EVEN_Y",
+      "mode_band": 1,
+      "reference_time": 450.18,
+      "simulation_time": 450.18,
+      "powers": {
+        "incident_mode_power": 1112.9219363053162,
+        "incident_flux": 1112.9276788370655,
+        "fundamental_transmission": 0.9993290701781959,
+        "fundamental_reflection": 4.646845141107686e-05,
+        "reflected_flux_fraction": 4.9590047289532693e-05,
+        "output_flux_fraction": 0.9999725068168408
+      },
+      "coupling_efficiency": 0.9993290701781959,
+      "optimization_acceptable": true,
+      "numerical_warnings": []
+    },
+    {
+      "data_kind": "fdtd_meep_2d_unvalidated",
+      "scientifically_validated": false,
+      "model_dimension": 2,
+      "is_full_3d_device": false,
+      "solver": "Meep",
+      "solver_version": "1.35.0",
+      "tutorial": "https://meep.readthedocs.io/en/latest/Python_Tutorials/Mode_Decomposition/#reflectance-of-a-waveguide-taper",
+      "parameters": {
+        "taper_length_um": 4.0,
+        "output_width_um": 2.5
+      },
+      "configuration": {
+        "resolution": 25,
+        "input_width_um": 1.0,
+        "straight_length_um": 10.0,
+        "air_padding_um": 3.0,
+        "pml_x_um": 6.0,
+        "pml_y_um": 2.0,
+        "wavelength_um": 6.67,
+        "epsilon": 12.0,
+        "decay_interval": 50.0,
+        "decay_threshold": 1e-09,
+        "max_time": 4000.0
+      },
+      "polarization": "Ez; ODD_Z + EVEN_Y",
+      "mode_band": 1,
+      "reference_time": 450.18,
+      "simulation_time": 450.18,
+      "powers": {
+        "incident_mode_power": 1112.8263705090048,
+        "incident_flux": 1112.8449282407576,
+        "fundamental_transmission": 0.9975619419013975,
+        "fundamental_reflection": 7.574213733845115e-05,
+        "reflected_flux_fraction": 8.112309697170922e-05,
+        "output_flux_fraction": 1.0002432787232722
+      },
+      "coupling_efficiency": 0.9975619419013975,
+      "optimization_acceptable": true,
+      "numerical_warnings": [
+        "output_flux_fraction lies outside [0,1]"
+      ]
+    }
+  ]
+}

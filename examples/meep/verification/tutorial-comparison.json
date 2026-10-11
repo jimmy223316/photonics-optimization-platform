@@ -1,0 +1,50 @@
+{
+  "comparison_kind": "executed_upstream_script_reproduction_not_independent_physical_validation",
+  "scientifically_validated": false,
+  "source_script_url": "https://raw.githubusercontent.com/NanoComp/meep/master/python/examples/mode-decomposition.py",
+  "source_script_sha256": "2b3b43e71feeda21953df1d5febc750061532547cf9be85824e80921f96fbc69",
+  "official_log_sha256": "76c36f8cc3f02430ac618d3034cd9fceacac2088344dd2b23b72bd100912fc00",
+  "all_match_printed_precision": true,
+  "comparisons": [
+    {
+      "taper_length_um": 1.0,
+      "official_reflection_mode": 0.00033425,
+      "official_reflection_flux": 0.0004119,
+      "backend_reflection_mode": 0.0003342465756150714,
+      "backend_reflection_flux": 0.0004119001301839263,
+      "mode_absolute_difference": 3.424384928613425e-09,
+      "flux_absolute_difference": 1.3018392630180162e-10,
+      "matches_printed_precision": true
+    },
+    {
+      "taper_length_um": 2.0,
+      "official_reflection_mode": 8.612e-05,
+      "official_reflection_flux": 9.79e-05,
+      "backend_reflection_mode": 8.612420829984232e-05,
+      "backend_reflection_flux": 9.789873596798849e-05,
+      "mode_absolute_difference": 4.208299842322206e-09,
+      "flux_absolute_difference": 1.2640320115072214e-09,
+      "matches_printed_precision": true
+    },
+    {
+      "taper_length_um": 4.0,
+      "official_reflection_mode": 4.647e-05,
+      "official_reflection_flux": 4.959e-05,
+      "backend_reflection_mode": 4.646845141107686e-05,
+      "backend_reflection_flux": 4.9590047289532693e-05,
+      "mode_absolute_difference": 1.5485889231375578e-09,
+      "flux_absolute_difference": 4.7289532695542896e-11,
+      "matches_printed_precision": true
+    },
+    {
+      "taper_length_um": 8.0,
+      "official_reflection_mode": 2.143e-05,
+      "official_reflection_flux": 2.189e-05,
+      "backend_reflection_mode": 2.142613879161522e-05,
+      "backend_reflection_flux": 2.189282854831502e-05,
+      "mode_absolute_difference": 3.861208384780781e-09,
+      "flux_absolute_difference": 2.828548315020877e-09,
+      "matches_printed_precision": true
+    }
+  ]
+}

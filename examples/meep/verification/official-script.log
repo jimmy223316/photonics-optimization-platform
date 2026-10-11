@@ -1,0 +1,349 @@
+-----------
+Initializing structure...
+Halving computational cell along direction y
+time for choose_chunkdivision = 0.000355959 s
+Working in 2D dimensions.
+Computational cell is 33 x 12 x 0 with resolution 25
+     prism, center = (0,0,5e+19)
+          height 1e+20, axis (0,0,1), sidewall angle: 0 radians, 4 vertices:
+          (-17.5,0.5,0)
+          (17.5,0.5,0)
+          (17.5,-0.5,0)
+          (-17.5,-0.5,0)
+          dielectric constant epsilon diagonal = (12,12,12)
+time for set_epsilon = 0.291656 s
+-----------
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+on time step 2483 (time=49.66), 0.00161592 s/step
+field decay(t = 50.02): 7.547409317829798e-08 / 7.547409317829798e-08 = 1.0
+on time step 4539 (time=90.78), 0.00194576 s/step
+field decay(t = 100.04): 0.0017356142822491634 / 0.0017356142822491634 = 1.0
+field decay(t = 150.06): 0.45397875685943895 / 0.45397875685943895 = 1.0
+on time step 8123 (time=162.46), 0.0011162 s/step
+field decay(t = 200.08): 1.5637205310625681 / 1.5637205310625681 = 1.0
+on time step 11650 (time=233), 0.00113437 s/step
+field decay(t = 250.1): 1.2378300820530161 / 1.5637205310625681 = 0.7915929077249467
+field decay(t = 300.12): 0.031049014016284206 / 1.5637205310625681 = 0.019855858767286252
+on time step 15040 (time=300.8), 0.00118005 s/step
+field decay(t = 350.14): 8.860503523067186e-06 / 1.5637205310625681 = 5.666296084918934e-06
+on time step 18570 (time=371.4), 0.00113326 s/step
+field decay(t = 400.16): 2.7863578003572156e-11 / 1.5637205310625681 = 1.781877096966841e-11
+run 0 finished at t = 400.16 (20008 timesteps)
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+Dominant planewave for band 1: (0.424377,-0.000000,0.000000)
+-----------
+Initializing structure...
+Halving computational cell along direction y
+time for choose_chunkdivision = 0.000458002 s
+Working in 2D dimensions.
+Computational cell is 33 x 12 x 0 with resolution 25
+     prism, center = (0,0,5e+19)
+          height 1e+20, axis (0,0,1), sidewall angle: 0 radians, 8 vertices:
+          (-17.5,0.5,0)
+          (-0.5,0.5,0)
+          (0.5,1,0)
+          (17.5,1,0)
+          (17.5,-1,0)
+          (0.5,-1,0)
+          (-0.5,-0.5,0)
+          (-17.5,-0.5,0)
+          dielectric constant epsilon diagonal = (12,12,12)
+time for set_epsilon = 0.841509 s
+-----------
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+field decay(t = 50.02): 7.55116424136253e-08 / 7.55116424136253e-08 = 1.0
+on time step 3457 (time=69.14), 0.00115716 s/step
+field decay(t = 100.04): 0.001737568234917161 / 0.001737568234917161 = 1.0
+on time step 6743 (time=134.86), 0.00121755 s/step
+field decay(t = 150.06): 0.45463915327171817 / 0.45463915327171817 = 1.0
+field decay(t = 200.08): 1.5661544169460893 / 1.5661544169460893 = 1.0
+on time step 10115 (time=202.3), 0.00118642 s/step
+field decay(t = 250.1): 1.2398082541411362 / 1.5661544169460893 = 0.7916258069614175
+on time step 13642 (time=272.84), 0.00113425 s/step
+field decay(t = 300.12): 0.03131404930663543 / 1.5661544169460893 = 0.01999422851783416
+on time step 17111 (time=342.22), 0.00115327 s/step
+field decay(t = 350.14): 9.723757829797516e-06 / 1.5661544169460893 = 6.208683974316072e-06
+field decay(t = 400.16): 5.15605659228773e-11 / 1.5661544169460893 = 3.292176388546503e-11
+run 0 finished at t = 400.16 (20008 timesteps)
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+Dominant planewave for band 1: (0.424377,-0.000000,0.000000)
+refl:, 1, 0.00033425, 0.00041190
+-----------
+Initializing structure...
+Halving computational cell along direction y
+time for choose_chunkdivision = 0.000301838 s
+Working in 2D dimensions.
+Computational cell is 34 x 12 x 0 with resolution 25
+     prism, center = (0,0,5e+19)
+          height 1e+20, axis (0,0,1), sidewall angle: 0 radians, 4 vertices:
+          (-18,0.5,0)
+          (18,0.5,0)
+          (18,-0.5,0)
+          (-18,-0.5,0)
+          dielectric constant epsilon diagonal = (12,12,12)
+time for set_epsilon = 0.391409 s
+-----------
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+field decay(t = 50.02): 7.571674213009396e-08 / 7.571674213009396e-08 = 1.0
+on time step 3343 (time=66.86), 0.00119676 s/step
+field decay(t = 100.04): 0.0017406599772718477 / 0.0017406599772718477 = 1.0
+on time step 6745 (time=134.9), 0.00117602 s/step
+field decay(t = 150.06): 0.4552933937992338 / 0.4552933937992338 = 1.0
+field decay(t = 200.08): 1.5682462802557549 / 1.5682462802557549 = 1.0
+on time step 10157 (time=203.14), 0.00117243 s/step
+field decay(t = 250.1): 1.2414144422420694 / 1.5682462802557549 = 0.7915940613865925
+on time step 13678 (time=273.56), 0.00113625 s/step
+field decay(t = 300.12): 0.031139198581878323 / 1.5682462802557549 = 0.01985606404677717
+on time step 17082 (time=341.64), 0.00117516 s/step
+field decay(t = 350.14): 8.886312407082438e-06 / 1.5682462802557549 = 5.666401074219815e-06
+field decay(t = 400.16): 2.7609192225857373e-11 / 1.5682462802557549 = 1.7605138028036498e-11
+run 0 finished at t = 400.16 (20008 timesteps)
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+Dominant planewave for band 1: (0.424377,-0.000000,0.000000)
+-----------
+Initializing structure...
+Halving computational cell along direction y
+time for choose_chunkdivision = 0.000405073 s
+Working in 2D dimensions.
+Computational cell is 34 x 12 x 0 with resolution 25
+     prism, center = (0,0,5e+19)
+          height 1e+20, axis (0,0,1), sidewall angle: 0 radians, 8 vertices:
+          (-18,0.5,0)
+          (-1,0.5,0)
+          (1,1,0)
+          (18,1,0)
+          (18,-1,0)
+          (1,-1,0)
+          (-1,-0.5,0)
+          (-18,-0.5,0)
+          dielectric constant epsilon diagonal = (12,12,12)
+time for set_epsilon = 0.905384 s
+-----------
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+field decay(t = 50.02): 7.57103818808201e-08 / 7.57103818808201e-08 = 1.0
+on time step 3325 (time=66.5), 0.00120305 s/step
+field decay(t = 100.04): 0.0017392585992030659 / 0.0017392585992030659 = 1.0
+on time step 5443 (time=108.86), 0.00188904 s/step
+on time step 6371 (time=127.42), 0.00431522 s/step
+on time step 7300 (time=146), 0.00440092 s/step
+field decay(t = 150.06): 0.4536525411643814 / 0.4536525411643814 = 1.0
+on time step 8978 (time=179.56), 0.00238408 s/step
+field decay(t = 200.08): 1.5537303405430518 / 1.5537303405430518 = 1.0
+on time step 10432 (time=208.64), 0.00275141 s/step
+on time step 12364 (time=247.28), 0.0020711 s/step
+field decay(t = 250.1): 1.2243056496527043 / 1.5537303405430518 = 0.7879782081263801
+on time step 14145 (time=282.9), 0.00224665 s/step
+field decay(t = 300.12): 0.029930309813517974 / 1.5537303405430518 = 0.01926351634676638
+on time step 16072 (time=321.44), 0.00207579 s/step
+field decay(t = 350.14): 8.401646007471522e-06 / 1.5537303405430518 = 5.407402937458904e-06
+on time step 17966 (time=359.32), 0.00211385 s/step
+on time step 19887 (time=397.74), 0.00208243 s/step
+field decay(t = 400.16): 4.776699161793447e-11 / 1.5537303405430518 = 3.074342462878031e-11
+run 0 finished at t = 400.16 (20008 timesteps)
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+Dominant planewave for band 1: (0.424377,-0.000000,0.000000)
+refl:, 2, 0.00008612, 0.00009790
+-----------
+Initializing structure...
+Halving computational cell along direction y
+time for choose_chunkdivision = 0.000510931 s
+Working in 2D dimensions.
+Computational cell is 36 x 12 x 0 with resolution 25
+     prism, center = (0,0,5e+19)
+          height 1e+20, axis (0,0,1), sidewall angle: 0 radians, 4 vertices:
+          (-19,0.5,0)
+          (19,0.5,0)
+          (19,-0.5,0)
+          (-19,-0.5,0)
+          dielectric constant epsilon diagonal = (12,12,12)
+time for set_epsilon = 0.756735 s
+-----------
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+on time step 1825 (time=36.5), 0.00219181 s/step
+field decay(t = 50.02): 7.57167421300899e-08 / 7.57167421300899e-08 = 1.0
+on time step 3572 (time=71.44), 0.00229002 s/step
+field decay(t = 100.04): 0.0017406599772720023 / 0.0017406599772720023 = 1.0
+on time step 5192 (time=103.84), 0.00247012 s/step
+on time step 7047 (time=140.94), 0.00215744 s/step
+field decay(t = 150.06): 0.4552933938030996 / 0.4552933938030996 = 1.0
+on time step 8855 (time=177.1), 0.00221305 s/step
+field decay(t = 200.08): 1.5682462806872939 / 1.5682462806872939 = 1.0
+on time step 10695 (time=213.9), 0.00217427 s/step
+field decay(t = 250.1): 1.2414144439282275 / 1.5682462806872939 = 0.7915940622439543
+on time step 12578 (time=251.56), 0.00212483 s/step
+on time step 14615 (time=292.3), 0.00196446 s/step
+field decay(t = 300.12): 0.031139203523406978 / 1.5682462806872939 = 0.01985606719230351
+on time step 16432 (time=328.64), 0.00220177 s/step
+field decay(t = 350.14): 8.88646306974279e-06 / 1.5682462806872939 = 5.666497143451372e-06
+on time step 18300 (time=366), 0.0021416 s/step
+on time step 19894 (time=397.88), 0.00251012 s/step
+field decay(t = 400.16): 2.7650862230528832e-11 / 1.5682462806872939 = 1.7631709107839022e-11
+run 0 finished at t = 400.16 (20008 timesteps)
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+Dominant planewave for band 1: (0.424377,-0.000000,0.000000)
+-----------
+Initializing structure...
+Halving computational cell along direction y
+time for choose_chunkdivision = 0.000583172 s
+Working in 2D dimensions.
+Computational cell is 36 x 12 x 0 with resolution 25
+     prism, center = (0,0,5e+19)
+          height 1e+20, axis (0,0,1), sidewall angle: 0 radians, 8 vertices:
+          (-19,0.5,0)
+          (-2,0.5,0)
+          (2,1,0)
+          (19,1,0)
+          (19,-1,0)
+          (2,-1,0)
+          (-2,-0.5,0)
+          (-19,-0.5,0)
+          dielectric constant epsilon diagonal = (12,12,12)
+time for set_epsilon = 2.0401 s
+-----------
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+on time step 1662 (time=33.24), 0.00240681 s/step
+field decay(t = 50.02): 7.569343707558733e-08 / 7.569343707558733e-08 = 1.0
+on time step 3314 (time=66.28), 0.00244591 s/step
+field decay(t = 100.04): 0.001738872975413053 / 0.001738872975413053 = 1.0
+on time step 5130 (time=102.6), 0.00220283 s/step
+on time step 7004 (time=140.08), 0.00213489 s/step
+field decay(t = 150.06): 0.4536659813064623 / 0.4536659813064623 = 1.0
+on time step 8832 (time=176.64), 0.00218868 s/step
+field decay(t = 200.08): 1.554348658478625 / 1.554348658478625 = 1.0
+on time step 10703 (time=214.06), 0.00213816 s/step
+field decay(t = 250.1): 1.224732062239676 / 1.554348658478625 = 0.7879390866129269
+on time step 12542 (time=250.84), 0.00217615 s/step
+on time step 14365 (time=287.3), 0.00219423 s/step
+field decay(t = 300.12): 0.02958594733834255 / 1.554348658478625 = 0.01903430557678151
+on time step 16359 (time=327.18), 0.00200638 s/step
+field decay(t = 350.14): 7.137831599941107e-06 / 1.554348658478625 = 4.592168919763162e-06
+on time step 18332 (time=366.64), 0.00202756 s/step
+field decay(t = 400.16): 7.828908999407316e-11 / 1.554348658478625 = 5.0367779176842756e-11
+run 0 finished at t = 400.16 (20008 timesteps)
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+Dominant planewave for band 1: (0.424377,-0.000000,0.000000)
+refl:, 4, 0.00004647, 0.00004959
+-----------
+Initializing structure...
+Halving computational cell along direction y
+time for choose_chunkdivision = 0.000473022 s
+Working in 2D dimensions.
+Computational cell is 40 x 12 x 0 with resolution 25
+     prism, center = (0,0,5e+19)
+          height 1e+20, axis (0,0,1), sidewall angle: 0 radians, 4 vertices:
+          (-21,0.5,0)
+          (21,0.5,0)
+          (21,-0.5,0)
+          (-21,-0.5,0)
+          dielectric constant epsilon diagonal = (12,12,12)
+time for set_epsilon = 0.915406 s
+-----------
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+on time step 1636 (time=32.72), 0.00244549 s/step
+field decay(t = 50.02): 7.571674213009115e-08 / 7.571674213009115e-08 = 1.0
+on time step 3346 (time=66.92), 0.0023397 s/step
+on time step 4842 (time=96.84), 0.00267514 s/step
+field decay(t = 100.04): 0.0017406599772719804 / 0.0017406599772719804 = 1.0
+on time step 5685 (time=113.7), 0.00474629 s/step
+on time step 6543 (time=130.86), 0.00466576 s/step
+on time step 7380 (time=147.6), 0.00478053 s/step
+field decay(t = 150.06): 0.4552933938033603 / 0.4552933938033603 = 1.0
+on time step 8785 (time=175.7), 0.00284732 s/step
+field decay(t = 200.08): 1.5682462807272213 / 1.5682462807272213 = 1.0
+field decay(t = 250.1): 1.2414144441245447 / 1.5682462807272213 = 0.791594062348983
+on time step 12774 (time=255.48), 0.0010029 s/step
+field decay(t = 300.12): 0.031139204640060945 / 1.5682462807272213 = 0.019856067903837905
+on time step 17172 (time=343.44), 0.000909611 s/step
+field decay(t = 350.14): 8.88651690931386e-06 / 1.5682462807272213 = 5.6665314743759745e-06
+field decay(t = 400.16): 2.7625870981651994e-11 / 1.5682462807272213 = 1.7615773313896482e-11
+run 0 finished at t = 400.16 (20008 timesteps)
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+Dominant planewave for band 1: (0.424377,-0.000000,0.000000)
+-----------
+Initializing structure...
+Halving computational cell along direction y
+time for choose_chunkdivision = 0.000421047 s
+Working in 2D dimensions.
+Computational cell is 40 x 12 x 0 with resolution 25
+     prism, center = (0,0,5e+19)
+          height 1e+20, axis (0,0,1), sidewall angle: 0 radians, 8 vertices:
+          (-21,0.5,0)
+          (-4,0.5,0)
+          (4,1,0)
+          (21,1,0)
+          (21,-1,0)
+          (4,-1,0)
+          (-4,-0.5,0)
+          (-21,-0.5,0)
+          dielectric constant epsilon diagonal = (12,12,12)
+time for set_epsilon = 0.748279 s
+-----------
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+field decay(t = 50.02): 7.568684544153997e-08 / 7.568684544153997e-08 = 1.0
+on time step 4400 (time=88), 0.000909181 s/step
+field decay(t = 100.04): 0.0017388884586399757 / 0.0017388884586399757 = 1.0
+field decay(t = 150.06): 0.453897665030322 / 0.453897665030322 = 1.0
+on time step 8853 (time=177.06), 0.000898412 s/step
+field decay(t = 200.08): 1.5576760596765302 / 1.5576760596765302 = 1.0
+field decay(t = 250.1): 1.2294717168214024 / 1.5576760596765302 = 0.7892987179097538
+on time step 13077 (time=261.54), 0.000947099 s/step
+field decay(t = 300.12): 0.030163942130122808 / 1.5576760596765302 = 0.019364708048724012
+field decay(t = 350.14): 6.520661534754419e-06 / 1.5576760596765302 = 4.18614736629419e-06
+on time step 17687 (time=353.74), 0.000867795 s/step
+field decay(t = 400.16): 2.397802626873339e-09 / 1.5576760596765302 = 1.539346138099645e-09
+on time step 22239 (time=444.78), 0.0008789 s/step
+field decay(t = 450.18): 2.335309528846867e-13 / 1.5576760596765302 = 1.4992266937272062e-13
+run 0 finished at t = 450.18 (22509 timesteps)
+MPB solved for frequency_1(0.519356,0,0) = 0.176186 after 9 iters
+MPB solved for frequency_1(0.424206,0,0) = 0.149878 after 7 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 5 iters
+MPB solved for frequency_1(0.424377,0,0) = 0.149925 after 1 iters
+Dominant planewave for band 1: (0.424377,-0.000000,0.000000)
+refl:, 8, 0.00002143, 0.00002189
+
+Elapsed run time = 270.8028 s

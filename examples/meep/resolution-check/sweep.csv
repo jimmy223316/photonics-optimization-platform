@@ -1,0 +1,2 @@
+taper_length_um,output_width_um,coupling_efficiency,data_kind,optimization_acceptable
+1.0,2.0,0.9869888065760429,fdtd_meep_2d_unvalidated,True
