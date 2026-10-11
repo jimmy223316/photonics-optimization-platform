@@ -35,6 +35,8 @@
 
 ## Release verification
 
+- PR #3 rebases only the Meep extension commits onto main after PR #2 merged. Reverified on 2026-10-12: 97 default tests passed (3 solver tests skipped); all 100 passed in Conda with real Meep tests enabled.
+
 - PR #2 now rebases its unique v0.2 extensions onto main after PR #1 was squash-merged. All 66 branch tests passed again on 2026-10-12.
 
 - Local test status is recorded in PROJECT_STATE.json after executing pytest.

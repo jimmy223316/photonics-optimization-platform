@@ -18,13 +18,14 @@
     "failed": 0,
     "skipped": 3,
     "python": "3.12.14",
-    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest",
-    "verified_date": "2026-10-11",
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest --junitxml=work/pr3-rebase-default.xml",
+    "verified_date": "2026-10-12",
     "skip_reason": "three opt-in real Meep integration tests; all passed separately in Conda"
   },
   "remote_ci": {
-    "status": "not_yet_verified",
-    "optional_meep_workflow": "manual_dispatch_only_not_run_remotely"
+    "status": "tracked_on_pull_request",
+    "optional_meep_workflow": "manual_dispatch_only_not_run_remotely",
+    "url": "https://github.com/jimmy223316/photonics-optimization-platform/pull/3/checks"
   },
   "weekly_report": {
     "cron_utc": "0 1 * * 1",
@@ -66,7 +67,8 @@
       "status": "passed",
       "passed": 100,
       "skipped": 0,
-      "command": "RUN_MEEP_TESTS=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest"
+      "command": "RUN_MEEP_TESTS=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest --junitxml=work/pr3-rebase-meep.xml",
+      "verified_date": "2026-10-12"
     }
   }
 }
