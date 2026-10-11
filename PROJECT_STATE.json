@@ -17,8 +17,8 @@
     "passed": 66,
     "failed": 0,
     "python": "3.12.14",
-    "command": "python -m pytest --junitxml=work/pytest-v02.xml",
-    "verified_date": "2026-10-11"
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest --junitxml=work/pr2-rebase-tests.xml",
+    "verified_date": "2026-10-12"
   },
   "remote_ci": {
     "status": "not_yet_verified"
@@ -40,5 +40,5 @@
     "external_data_validation": "not_established_by_import",
     "replay_mode": "exact_recorded_points_only"
   },
-  "pull_request_base": "codex/photonics-prototype"
+  "pull_request_base": "main"
 }

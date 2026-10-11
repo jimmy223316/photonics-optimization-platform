@@ -24,6 +24,8 @@
 
 ## Release verification
 
+- PR #2 now rebases its unique v0.2 extensions onto main after PR #1 was squash-merged. All 66 branch tests passed again on 2026-10-12.
+
 - Local test status is recorded in PROJECT_STATE.json after executing pytest.
 - Remote CI must be reviewed on the pull request; configured workflows alone are not evidence of a passing remote run.
 - Weekly scheduling is activated only on the default branch after an authorized merge.
