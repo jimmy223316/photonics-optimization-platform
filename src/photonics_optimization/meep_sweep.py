@@ -39,7 +39,7 @@ def export_sweep(records: list[dict], output: Path, result: OptimizationResult |
                "runs": records}
     (output / "sweep.json").write_text(json.dumps(payload, indent=2) + "\n")
     with (output / "sweep.csv").open("w", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=["taper_length_um", "output_width_um", "coupling_efficiency", "data_kind", "optimization_acceptable"])
+        writer = csv.DictWriter(stream, fieldnames=["taper_length_um", "output_width_um", "coupling_efficiency", "data_kind", "optimization_acceptable"], lineterminator="\n")
         writer.writeheader()
         for record in records:
             writer.writerow({**record["parameters"], "coupling_efficiency": record["coupling_efficiency"],
